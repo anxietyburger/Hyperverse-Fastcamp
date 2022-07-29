@@ -6,20 +6,25 @@ My repo where I learn how to use the Hyperverse by Decentology!
 ### Step 1: Get test ETH
 - Open your Ethereum wallet of choice. Make sure to adjust your settings so that you are using the Rinkeby test network.
 
-- Go to a faucet website, such as [Chainlink](https://faucets.chain.link/rinkeby), and send some test ETH to your wallet. The reason for this is because we will need it to be able to interact with the example app and test functions.
+- Go to a faucet website, such as [Chainlink](https://faucets.chain.link/rinkeby), and send some test ETH to your wallet. The reason for this is because we will need it to be able to interact with module.
 
 ### Step 2: Set up Hyperverse
-- Clone Decentology's Hyperverse Monorepo. Visit the [Github page](https://github.com/decentology/hyperverse-mono) for system requirements and instructions.
+- Go to [eth.hyperverse.dev](https://eth.hyperverse.dev/) and choose the ERC-721 module. Click the button in the top right corner of the app to connect your wallet with the test ETH to the module. If you're not familiar with web3 or using websites that handle cryptocurrency, connecting your wallet is akin to logging into a website or a browser such as Google. It's just a way for the website to identify you as the person interacting with the app. You will see a notification pop up instructing you to sign (authorize) the transaction.
 
-- Once everything is set up and installed, use the terminal to change the directory to the erc721 app and enter the command `pnpm dev`. You can then run the app locally by using your browser to open [localhost:3000](http://localhost:3000/)
+- Open your code editor or terminal, and navigate to the directory you want to store your app in.
 
-### Step 3: Test out the ERC-721 module
-- Once the example app is up and running, click the button in the top right corner of the app to connect your wallet with the test ETH to the app. If you're not familiar with web3 or using websites that handle cryptocurrency, connecting your wallet is akin to logging into a website or a browser such as Google. It's just a way for the website to identify you as the person interacting with the app. You will see a notification pop up instructing you to sign (authorize) the transaction. 
+- Clone the Next.js boilerplate code into that directory by entering the command `git clone https://github.com/decentology/erc721-nextjs-boilerplate` into the terminal.
 
-- The first thing to do is to create an instance. To make sure everything is working, under the heading "Token Factory Functions", click the button to create an instance. Sign the transaction notification. You can even view your transaction on [Etherscan](https://rinkeby.etherscan.io) under the Rinkeby test network to watch its progress and see when it's successful. You can do this easily by clicking that same button in the top right corner (now displaying your wallet address
+- Change the directory so that you're in the erc721-nextjs-boilerplate folder. Run the command `npm i` to install the needed dependencies for the module.
 
-- In your code editor, navigate to the _app.tsx file (you should still be in the erc721 directory). On line 59 of that file, change the tenant ID to your wallet address. You can do this by going to the example app, clicking the button with your wallet address, and using the button to copy that address. Then, copy/paste into your code, replacing the address that's in there already. This will make sure that any functions from the module you use interact with your wallet address.
+- Navigate to your _app.tsx file. Within the MyApp function, change the tenantId to the wallet address you used to connect to the module. This will make sure that any functions from the module you use interact with your wallet address.
 
-### Step 4: Customize!
+- Enter the command `npm dev` into the terminal. You will then be able to see the app locally on [localhost:3000](http://localhost:3000/). You are now connected to the Hyperverse!
+
+### Step 3: Customize!
+
+- Any aesthetic changes you want to make can be achieved by adjusting the code in the index.tsx file (in the pages folder) or the Home.module.css file (in the styles folder).
+
+- Additionally, you can customize the functionality of your app by checking out the Dashboard and Code tabs of the ERC-721 module on [eth.hyperverse.dev](https://eth.hyperverse.dev/). There you can see the code snippets and demos via Storybook for functions that allow you to get the balance of accounts, whitelist wallet address for minting, create an NFT collection, you name it!
 
 
