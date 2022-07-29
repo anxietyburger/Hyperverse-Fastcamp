@@ -17,7 +17,7 @@ My repo where I learn how to use the Hyperverse by Decentology!
 
 - Change the directory so that you're in the erc721-nextjs-boilerplate folder. Run the command `npm i` to install the needed dependencies for the module.
 
-- Navigate to your _app.tsx file. Within the MyApp function, change the tenantId to the wallet address you used to connect to the module. This will make sure that any functions from the module you use interact with your wallet address.
+- Navigate to your _app.tsx file. Within the MyApp function, change the tenantId to the wallet address you used to connect to the module. This will make sure that any functions from the module you use interacts with your wallet address.
 
 - Enter the command `npm dev` into the terminal. You will then be able to see the app locally on [localhost:3000](http://localhost:3000/). You are now connected to the Hyperverse!
 
