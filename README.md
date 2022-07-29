@@ -25,6 +25,6 @@ My repo where I learn how to use the Hyperverse by Decentology!
 
 - Any aesthetic changes you want to make can be achieved by adjusting the code in the index.tsx file (in the pages folder) or the Home.module.css file (in the styles folder).
 
-- Additionally, you can customize the functionality of your app by checking out the Dashboard and Code tabs of the ERC-721 module on [eth.hyperverse.dev](https://eth.hyperverse.dev/). There you can see the code snippets and demos via Storybook for functions that allow you to get the balance of accounts, whitelist wallet address for minting, create an NFT collection, you name it!
+- Additionally, you can customize the functionality of your app by checking out the Code tab of the ERC-721 module on [eth.hyperverse.dev](https://eth.hyperverse.dev/). There you can see the code snippets and demos via Storybook for functions that allow you to get the balance of accounts, whitelist wallet address for minting, create an NFT collection, you name it!
 
 
